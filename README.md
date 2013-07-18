@@ -41,7 +41,12 @@ From the Beginning:
 ===================
 I want to create this site from scratch now that I have established the proof of concept and in order to learn/practise what I have learnt from Codeacademy (html5, jquery, javascript, php) This will allow me to add cool features and make the site look neat and revolutionary. 
 
-
 I urge others to collaborate and add their ideas, design, functionality 
+Download the Zip. It contains the:
+--simplehtmldom
+--index.html file
+--styles.css
+--scrapescript.php file (which is already being run daily)
+--lib/cyprusimageslib file (which is the call to display the newspapers on the page)
 
 All Help / ideas are  very welcomed!
