@@ -1,10 +1,25 @@
+<script type="text/javascript">       
+        $(function() {
+            $('.image').each(function() {
+                $(this).hover(
+                    function() {
+                    $('.title', this).animate({ opacity: 1 })
+                    },
+                    function() {
+                       $('.title', this).stop().animate({ opacity: 0});
+                   })
+                });
+        });
+</script>
+
 <?php
+ echo "im inside";
  
 //******************************************************************
 //* Function to get the Full URL path in order to display images to
 //******************************************************************
 function getMyFullURL(){
-echo "inside full path";
+
 try{
 $pageURL = 'http';
 
@@ -16,7 +31,7 @@ $pageURL = 'http';
   $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
  }
  return $pageURL;
- echo $pageURL;
+ 
  }
  catch (Exception $e){
     return "";
@@ -110,7 +125,7 @@ function my_mime_content_type($filename) {
              return 'application/octet-stream';
          }
      }
- //showPapers();
+ 
 //***************************************************************
 // Function to get images from local directory 
 // Original PHP code by Chirp Internet: www.chirp.com.au
@@ -163,7 +178,6 @@ function getImages($dir)
   } 
 
 function showPapers(){
-echo "inside showPapers";
 $html = new simple_html_dom();
 // load the html file
   $html = file_get_html('http://www.kathimerini.com.cy/index.php?pageaction=kat&modid=1&sctid=40');
@@ -216,3 +230,4 @@ $html = new simple_html_dom();
 //end 
 
  ?>
+ 
